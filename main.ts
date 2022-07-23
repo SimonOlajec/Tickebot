@@ -1,0 +1,13 @@
+input.onPinPressed(TouchPin.P0, function () {
+    servos.P0.setAngle(45)
+    servos.P1.setAngle(45)
+    basic.pause(1000)
+    servos.P0.setAngle(135)
+    servos.P1.setAngle(135)
+    basic.pause(1000)
+    servos.P0.stop()
+    servos.P1.stop()
+})
+pins.touchSetMode(TouchTarget.P2, TouchTargetMode.Capacitive)
+servos.P0.setAngle(90)
+servos.P1.setAngle(90)
